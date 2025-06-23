@@ -30,7 +30,7 @@ main{
 }
 #div_main{
     width: 20%;
-    min-width: 290px;
+    min-width: 300px;
     border-radius: 10px;
     padding: 12px;
     background-color: var(--color1);
@@ -43,7 +43,7 @@ main{
 }
 .attribution {
     font-size: 1em; 
-    padding: 8px;
+    padding: 3px;
     text-align: center; 
 }
 .attribution a{ 
