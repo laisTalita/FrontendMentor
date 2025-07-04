@@ -1,0 +1,95 @@
+
+header .navbar-toggler-icon{
+  color: white !important;
+}
+header .nav_index{
+  text-decoration: none;
+}
+header .navbar-toggler:focus{
+  outline: 0.3px solid rgba(255, 255, 255, 0.228) !important;
+  box-shadow: none !important;
+}
+.span_lay{
+    color: rgba(248, 247, 247, 0.902);
+}
+.header{
+  height: 130px;
+  padding: 0% !important;
+  margin: 0% !important;
+}
+.navbar{
+  height: 100%;
+  padding: 2em;
+}
+ header .container-fluid{
+  padding: 0%;
+}
+ span{
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-right: 0.4em;
+}
+ header .navbar-nav  {
+  position: relative;
+  z-index: 4;
+   background-image: linear-gradient( to right, rgba(255, 255, 255, 0.132), rgba(255, 255, 255, 0.055),rgba(255, 255, 255, 0.087));
+    backdrop-filter:blur(40px);
+    border: 1px solid rgba(230, 228, 228, 0.085);
+    gap: 0.8em;
+    margin: 0%;
+    padding: 0.8em;
+    width: 95%;
+    max-width: 920px;
+    height: 100%;
+}
+
+header hr{ 
+    position: relative;
+    left: 2%;
+    z-index: 6;
+    width: 92%;
+    height: 1px ;
+    background-color: white;
+    border: none;
+    display: none;
+  }
+
+  @media (min-width: 576px) {
+  header .navbar{
+    padding: 5em 4.1em;
+    padding-right: 0%;
+  }
+  header .navbar-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em !important;
+    padding: 1em;
+    min-width: none;
+  } 
+}
+
+@media (min-width: 1024px) {
+  header  .navbar-nav{
+    gap: 4em !important;
+    padding: 1.4em;
+    min-width: 900px;
+   }
+  header  hr{
+    display: block;
+   }
+    .nav_ativo{
+    padding-bottom: 28px;
+    border-bottom: 2px solid rgb(248, 241, 241);
+  }
+}
+
+@media( min-width:723px){
+  header #navbarNav ul {
+      font-size: 1.1em !important;
+   }
+    header .navbar-nav{
+    gap: 4em !important;
+  }
+ 
+}

@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --font1: "Raleway", sans-serif;
+    --font2: "Open Sans", sans-serif;
+    --color1: hsl(0, 0%, 100%);
+    --color2: hsl(0, 100%, 63%);
+    --color3: hsl(198, 60%, 50%);
+    --color4: hsl(176, 68%, 64%);
+    --color5: hsl(219, 30%, 18%);
+    --color6: hsl(216, 53%, 9%);
+    --color7: hsl(218, 28%, 13%);
+    --color8: hsl(217, 28%, 15%);
+
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--color5);
+    font-size: 14px;
+    color: var(--color1);
+    font-family: var(--font2);
+
+}
+
+nav {
+    padding: 3em 2em 1em 1em;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a {
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+}
+
+a {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+nav ul,
+nav li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav img {
+    width: 8%;
+    margin-left: 1em;
+    min-width: 80px;
+}
+
+nav ul li {
+    margin-left: 1em;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+#intro {
+    margin-top: 0.4rem;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(to bottom, var(--color5) 52%, var(--color7)27%);
+    padding: 3em 1em 6em 1em;
+    overflow: hidden;
+}
+
+.curvy-bg {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: url("../images/bg-curvy-mobile.svg") no-repeat center top;
+    background-size: contain;
+    height: 300px;
+    z-index: 1;
+}
+
+#intro img,
+#intro h1,
+#intro p,
+#intro button {
+    position: relative;
+    z-index: 2;
+}
+
+#intro img {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    display: block;
+}
+
+#intro h1,
+#intro p {
+    margin: auto;
+    width: 90%;
+}
+
+#intro h1,
+button,
+h2,
+nav a {
+    font-family: var(--font1);
+}
+
+#intro h1 {
+    font-size: 1.7em;
+    margin-top: 1.3em;
+    max-width: 600px;
+
+}
+
+#intro p {
+    margin-top: 1.4em;
+    font-size: 16px;
+    max-width: 500px;
+
+
+}
+
+#intro button {
+    margin-top: 3em;
+    width: 70%;
+
+}
+
+button {
+    color: var(--color1);
+    background-image: linear-gradient(to left, var(--color3), var(--color4));
+    border-radius: 30px;
+    padding: 18px;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.653);
+    max-width: 250px;
+    font-weight: bold;
+    box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.282);
+    transition: 0.1s ease ;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.83);
+}
+
+main {
+    background-color: var(--color7);
+}
+#features {
+    padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+}
+.features_divs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 86%;
+  gap: 5em;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.features_divs div {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+.div_img{
+    height: 90px;
+}
+#features div img {
+    width: 99%;
+    margin-bottom: 1em;
+}
+
+#prod {
+  margin-top: 8em;
+  text-align: left;
+}
+#first_div_prod {
+  margin: auto;
+  width: 87%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+#first_div_prod > div,
+#texts {
+  width: 100%;
+  max-width: 530px;
+}
+
+#first_div_prod img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+#prod h2 {
+  font-size: 1.3em;
+  margin-top: 3em;
+  max-width: 400px;
+}
+
+#texts p {
+  margin-bottom: 1em;
+}
+
+#link_prod a {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  color: var(--color4);
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--color4);
+  width: 70%;
+  max-width: 230px;
+  text-decoration: none;
+}
+
+#link_prod img {
+  width: 26px;
+}
+#users {
+    margin-top: 9rem;
+    margin-bottom: 10rem;
+    padding: 35px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+#users article {
+  width: 82%;
+  max-width: 400px;
+  padding: 20px 10px;
+  background-color: var(--color5);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.042);
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.06);
+  transition: 0.2s ease ;
+
+}
+#users #first_user{
+  position: relative;
+  z-index: 100000 !important;
+}
+#img_quotes {
+  position: absolute;
+  top: -29px;
+  left: -10px;
+  width: 2.2em;
+  opacity: 0.3;
+  z-index: 0 !important;
+}
+.profile {
+    display: flex;
+    margin-top: 1.7em;
+    align-items: center;
+    gap: 1em;
+}
+.profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.profile div h3 {
+    margin-bottom: 0.1em;
+}
+
+#get_early {
+    padding: 10px 0px;
+    background-image: linear-gradient(to bottom, var(--color7) 60%, var(--color6) 40%);
+}
+
+#get_early>div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 50px 2px;
+    width: 90%;
+    max-width: 1020px;
+    border-radius: 13px;
+    margin: auto;
+    background-color: var(--color8);
+    box-shadow: 3px 5px 10px 1px rgba(0, 0, 0, 0.235);
+    border: 1px solid rgba(255, 255, 255, 0.018);
+}
+#get_early>div p{
+    width: 75%;
+    margin: auto;
+}
+#get_email {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+#get_email button,#get_email input[type="email"] {
+    width: 75% ;
+}
+
+#get_email input[type="email"] {
+    border-radius: 30px;
+    padding: 18px 2em;
+    border: none;
+    max-width: 600px;
+}
+
+footer {
+  background-color: var(--color6);
+  padding: 5rem 3.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer > img {
+  width: 150px;
+}
+
+footer > .footer-content{
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2em;
+}
+.footer_div {
+  max-width: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.6em;
+}
+.footer_div p {
+  margin: 0;
+}
+#foot_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: self-start;
+}
+
+.quebra {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: flex-start;
+}
+
+.quebra div{
+    min-width: 160px;
+}
+#sociais {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: var(--color1);
+  cursor: pointer;
+}
+#sociais i{
+    border: 1px solid var(--color1);
+    border-radius: 50%;
+    padding: 5px;
+    transition: 0.2s ease ;
+}
+button:hover,#users article:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+}
+nav ul li a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#sociais i:hover{
+  cursor: pointer;
+  transform: scale(1.2) rotate(5deg);
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--color1);
+  margin: 2rem 0;
+  width: 100%;
+}
+
+footer > .attribution {
+  text-align: center;
+  font-size: 1em;
+  color: var(--color1);
+}
+
+footer a {
+  color: var(--color1);
+  text-decoration: none;
+}
+
+footer .attribution a {
+    color: var(--color4);
+
+}
+
+
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+    #intro {
+    background: linear-gradient(to bottom, var(--color5) 94%, var(--color7)27%);    
+    }   
+    #intro h1 {
+      font-size: 2em;
+    }
+
+    .curvy-bg {
+        height: 500px;
+        top: 50%;
+        background-image: url("../images/bg-curvy-desktop.svg");
+        background-size: contain;   
+        background-position: center;    
+    }
+    #prod > div{
+        width: 100%;
+        gap: 1em;
+    }
+        #first_div_prod > div {
+        width: 46%;
+        margin-left: 0%;
+    }
+      #texts{
+        width: 20%;
+      }
+      #sociais {
+        width: 200px;
+      }
+      button{
+        font-size: 1.01em;
+      }
+}
+
+@media (min-width: 1024px) {
+     #intro {
+     background: linear-gradient(to bottom, var(--color5) 98%, var(--color7)27%);    
+    } 
+    .curvy-bg {
+        width: 100%;
+        height: 600px;
+        top: 41%;
+        background-image: url("../images/bg-curvy-desktop.svg");
+        background-size: contain;       
+        background-position: center left;
+    }
+
+    #prod > div{
+        width: 90%;
+        gap: 2em;
+    }
+    #first_div_prod > div {
+        width: 46%;
+        margin-left: 0%;
+    }
+      #texts{
+        width: 20%;
+      }
+    #prod h2 {
+        font-size: 2em;
+        margin-top: 2em;
+        margin-bottom:0.4em;
+    }
+      #users {
+        background-position: 90px 2px;
+    }
+   
+
+   
+}
+
+@media (min-width: 1440px) {
+     #first_div_prod > img{ 
+        margin-left: 3em;
+     }
+    #prod h2 {
+        font-size: 2.2em;
+        margin-top: 3em;
+        margin-bottom:0.7em;
+    }
+        #users {
+        background-position: 130px 2px;
+    }
+     #intro {
+     background: linear-gradient(to bottom, var(--color5) 100%);    
+    } 
+    main{
+        margin-top: 0.0px;
+    }
+    .curvy-bg {
+        width: 100%;
+        height: 100%;
+        top: 22%;
+        background-image: url("../images/bg-curvy-desktop.svg");
+        background-size: contain;       
+        background-position: center ;
+    }
+
+}
+
+.fade-in{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.2s ease-in-out, transform 2.1s ease;
+}
+.fade-in-show{
+    opacity: 1;
+    transform: translateY(0);
+}

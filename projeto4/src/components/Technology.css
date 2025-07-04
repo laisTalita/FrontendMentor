@@ -1,0 +1,166 @@
+#section_tech{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+}
+#circles{
+    max-width: 400px;
+}
+#circles div{
+    font-family: var(--font2);
+    width: 19%;
+    border-radius: 50%;
+    padding:0.6em;
+    border: 1px solid rgba(255, 255, 255, 0.669);
+    cursor: pointer;
+}
+#section_tech .circle_ativo{
+    background-color: rgba(255, 255, 255, 0.839);
+    border: 1px solid rgb(255, 255, 255);
+    text-shadow: none;
+    color: black;
+}
+#section_tech #div_container{
+    max-width: 710px;
+    width: 90%;
+}
+#textos{
+    max-width: 440px;
+}
+#section_tech #circles div:hover{
+    transform: scale(1.1);
+}
+#section_tech .p_tech{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; 
+}
+#section_tech #text-descr{
+    max-width: 480px;
+}
+ #section_tech .imagem-container{
+    height: 30vh;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 4px rgba(10, 3, 3, 0.195);
+ }
+ #section_tech .imagem-container img {
+  object-fit: cover; 
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.943);
+  border: 0.1px solid rgba(255, 255, 255, 0.725);
+}
+#section_tech h3{
+    font-family: var(--font2);
+    font-size: 1.2em;
+}
+@media (min-width: 576px) {
+    .bg-technology {
+        background-image: url(/public/assets/technology/background-technology-tablet.jpg);
+    }
+    #section_tech h2{
+        margin-top: 4em !important;
+        font-size: 1.3em;
+    }
+   #section_tech .p_tech{
+        margin-top: 1em;
+        font-size: 1.1em;
+    }
+    #section_tech h3{
+        font-size: 1.4em;
+        margin-bottom: 2em !important;
+    }
+     #section_tech .imagem-container{
+        height: 40vh;
+    }
+    
+}
+
+@media (min-width: 758px) {
+   
+    .bg-technology {
+        background-image: url(/public/assets/technology/background-technology-desktop.jpg);
+    }
+}
+
+@media(min-width: 992px){
+    #section_tech {
+    width: 100%;
+    padding: 0%;
+    }
+    #div_container{
+        margin-left: 0% !important;
+    }
+       #section_tech .imagem-container{
+        width: 320px;
+        height: 44vh;
+    }
+      #section_tech #circles{
+        width: 110px !important;
+        gap: 1.4em !important;
+        padding: 0% !important;
+        display:flex;
+        align-items: flex-start;
+        justify-content: space-between !important;
+
+        min-height: 63%;
+    }
+    #section_tech #circles div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        width: 80% !important;
+    }
+       #section_tech h2{
+      font-size: 1.4em;
+
+    }
+      #section_tech h3{
+        font-size: 2em;
+        margin-bottom: 0em !important;
+    }
+     #div_princ{
+        width: 89%;
+        margin-left: auto !important;
+        padding: 0% !important;
+        justify-content: space-between !important;
+    } 
+     #section_tech h2{
+        width: 89%;
+        margin-top: 3em !important; 
+        margin-left: auto !important;
+    }
+}
+@media (min-width:1300px){
+    #textos{
+        max-width: 90% !important;
+    }
+    #section_tech #textos h3{
+        font-size: 2.4em;
+        width: 100%;
+    }
+    #section_tech #text-descr{
+        font-size: 1.2em;
+    }
+
+     #section_tech .imagem-container {
+        min-height: 78vh !important;
+        margin-right: 0%;
+        min-width: 40%;
+    } 
+      #section_tech .imagem-container img {
+        object-fit: 100%; 
+    } 
+   
+    #section_tech #div_container{
+        gap: 2em !important;
+        max-width: 60%;
+        justify-content: flex-start !important;
+    }
+}
+

@@ -1,0 +1,206 @@
+ #section_destination{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+    text-shadow: 2px 1px 2px rgb(0, 0, 0);
+}
+ .planetas{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    text-align: center;
+    height: auto;
+    position: relative;
+}
+ .img_planeta{
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.398));
+    animation: girar 200s linear infinite;
+}
+.orbita_fobos, .orbita_deimos{
+    width: 80%;
+    height: 100%;
+    position: absolute; 
+    border-radius: 50%;
+}
+.orbita_deimos{
+    animation: girar 80s linear infinite;
+}
+.orbita_fobos{
+    animation: girar 40s linear infinite;
+}
+#fobos, #deimos{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#fobos{
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: -15%;
+    background-image: url("../../public/assets/destination/fobos.png");
+    animation: girar 30s linear infinite;
+}
+#deimos{
+    width: 20px;
+    height: 20px;
+    right: -3%;
+    bottom: -27%;
+    background-image: url("../../public/assets/destination/deimos.png");
+    animation: girar 70s linear infinite;
+}
+.linkAtivo{
+    border-bottom: 2px solid white;
+}
+@keyframes girar {
+    from{ 
+        transform: rotate(0deg); 
+    }
+    to { 
+        transform: rotate(360deg); 
+    }
+}
+
+ h3,h4{
+    font-family: var(--font2);
+    font-size: 0.8em
+}
+ h3{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+.nav-destino  li{
+    font-size: 0.9em;
+}
+.info_destination{
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+}
+.descricao_destination{
+    max-width: 420px;
+}
+.info_destination_p1{
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+@media (min-width: 567px) {
+     .bg-destination{
+    background-image:url(/public/assets/destination/background-destination-tablet.jpg);
+    background-position: top center;
+    }
+}
+@media (min-width: 576px) {
+    #section_destination{
+        padding-top: 3em;
+    }
+    #section_destination h2{
+        font-size: 1.3em;
+        text-align: left;
+    } 
+    #section_destination h3{
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    #section_div nav{
+        align-self: flex-end;
+    }
+    .info_destination_p1{
+    font-size: 0.9em;
+    }
+    .info_destination h4{
+    font-size: 1.2em;
+    }
+     #fobos{
+        width: 30px;
+        height: 30px;
+        top: -3%;
+    }
+    #deimos{
+        width: 20px;
+        height: 20px;
+        bottom: -7%;
+    }
+}
+@media (min-width:758px) {
+    .bg-destination{
+        background-image:url(/public/assets/destination/background-destination-desktop.jpg);
+    }
+    #section_destination h3{
+      font-size: 5em;
+    }
+    #fobos{
+        width: 35px;
+        height: 35px;
+        top: -1%;
+    }
+    #deimos{
+        width: 25px;
+        height: 25px;
+        bottom: -9%;
+    }
+     #section_destination{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+     }
+    #section_div{
+        margin: 0%;
+        width: 90%;
+    }
+    .planetas{
+        margin-bottom: 2em;
+    }
+}
+@media (min-width: 1024px) {
+     .nav-destino {
+        gap: 2em !important;
+        justify-content: flex-start !important;
+    }
+    #textos {
+        text-align: start;
+    
+    }
+    #textos h3{
+        text-align:left !important ;
+    }
+    #fobos{
+        width: 40px;
+        height: 40px;
+        top: -4%;
+    }
+    #deimos{
+        width: 30px;
+        height: 30px;
+        bottom: -9%;
+    }
+    #section_destination{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    #section_div{
+        max-width: 40%;
+        
+    }
+    #section_div h2{
+        margin-bottom: 2em;
+        font-size: 1.4em;
+    }
+    .planetas{
+        max-width: 100%;
+    }
+}
+@media (min-width:1240px){
+       #section_div{
+        max-width: 50%;
+    } #section_destination{
+        margin-top: 1.1em;
+    }
+}
