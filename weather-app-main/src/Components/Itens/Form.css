@@ -1,0 +1,61 @@
+.form_component{
+    width: 100%;
+    border-radius: 9px;
+    border: none;
+    max-width: 500px;
+    padding: 11px;
+    color: var(----Neutral_0);
+    background-color: var(--Neutral_800);
+    letter-spacing: 0.07em;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.127);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.form_div{
+    width: 100%;
+}
+.component_1{
+    background-image: url(../../assets/images/icon-search.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center left 1.3em;
+    padding-left:3.2em;
+}
+.component_button:hover{
+    background-color: var(--Blue_700);
+}
+.form_{
+    gap: 16px;
+    width: 100%;
+    max-width: 730px;
+    margin: auto;
+}
+@media (min-width:807px) {
+    .form_div .form_component{
+        max-width: none !important;
+    }
+    .form_div{
+    max-width: 74%;
+    }
+    .component_button{
+    max-width: 16%;}
+}
+@media (min-width:1500px){
+    .form_{
+        max-width: 62%;
+        gap: 1.4em;
+    }
+}
+.loading img{
+ width: 15px;
+}
+.loading{
+    bottom: -3em;
+}
+.component_button:focus {
+  outline: 2px solid var(--Blue_500) !important;
+  outline-offset: 3px;
+}
+.component_button{
+    width: 100%;
+    background-color: var(--Blue_500);
+}

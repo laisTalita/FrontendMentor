@@ -1,0 +1,39 @@
+.div_daily{
+    width: 99%;
+    margin: auto;
+}
+.weather_items{
+    width: 32%;
+    min-width: 80px;
+    max-width: 110px;
+    min-height: 160px;
+    background-color: var(--Neutral_800);
+    border-radius: 9px;
+    border: 2px solid var(--Neutral_600);
+}
+.climate_title{
+    font-size: 1.2em;
+}
+.max_min p{
+    font-size: 0.9em;
+    font-family: var(--Font2);
+}
+@media (min-width:768px) {
+    .daily{
+        gap: 0.7em !important;
+    }
+}
+@media (min-width:1024px) {
+    .weather_items{
+    width: 13%;
+    max-width: 110px;
+    }
+}
+@media(min-width: 1800px){
+   .max_min p{
+     font-size: 1em;
+    }
+}
+.item_img{
+    width: 60px;
+}

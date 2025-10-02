@@ -1,0 +1,34 @@
+.something_Error{
+    margin-top: 4em;
+    max-width: 800px;
+}
+.img_null{
+    width: 30px;
+}
+.paragraphy_error{
+    font-size: 1.1em;
+    width: 90%;
+    max-width: 530px;
+}
+.something_Error button{
+    background-color: var(--Neutral_700);
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 0.05em;
+    box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.149);
+    border: 1px solid var(--Neutral_600);
+}
+.something_Error button >img{
+    width: 17px;
+}
+@media (min-width:1300px) {
+    .img_null{
+        width: 50px;
+    }
+    .paragraphy_error{
+        font-size: 1.2em;
+    }
+    .something_Error{
+    margin-top: 5em;
+    }
+}
