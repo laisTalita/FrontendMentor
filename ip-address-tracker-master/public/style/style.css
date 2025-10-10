@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+
+:root{
+--Gray_950: hsl(0, 0%, 17%);
+--Gray_400: hsl(0, 0%, 58%);
+--Font: "Rubik", sans-serif;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-size: 18px;
+    font-family: var(--Font);
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background: var(--Gray_400) url('../images/pattern-bg-mobile.png') no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 44vh;
+    min-height: 215px;
+    max-height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6em;
+    padding-top: 1.5em;
+}
+header h1{
+    color: white;
+    font-size: 1.3em;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.349);
+}
+header form{
+  width: 88%;
+  max-width: 530px;
+  display: flex;
+  gap: 0em;
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.13));
+}
+header form input{
+    border: none;
+    width: 91%;
+    border-radius: 14px 0px 0px 14px;
+    padding: 1.3em;
+    font-size: 0.8em;
+}
+form button {
+  background: #000;
+  border: none;
+  padding: 1.3em 1.7em;
+  border-radius: 0px 14px 14px 0px;
+  cursor: pointer;
+}
+form button:hover{
+    background-color: var(--Gray_950);
+}
+.container{
+    background-color:white;
+    width: 79%;
+    max-width: 1030px;
+    box-shadow: 3px 3px 15px 2px rgba(0, 0, 0, 0.239);
+    border-radius: 14px;
+    padding: 1.5em 1em 1em;
+    position: relative;
+    top: 2px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4em;
+    z-index: 1000;
+}
+.container p{
+    color: var(--Gray_400);
+    font-weight:700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.6em;
+}
+h2{
+    font-size: 1.1em;
+    font-weight:500;
+}
+.container div{
+    min-width: 170px;
+    flex: 1 1 auto;
+    max-width:170px ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+}
+main{
+    flex: 1;
+    width: 100%;
+    height: 100vh;
+}
+footer{
+    background-color: var(--Gray_950);
+    color: white;
+    padding: 0.7em 0em;
+    border-top: 1px solid white;
+}
+footer p{
+    width: 80%;    
+    font-size: 0.9em;
+    text-align: center;
+    margin: auto;
+}
+footer p a{
+    color: rgb(128, 187, 200);
+    text-decoration: none;
+}
+
+@media (min-width :575px){
+   header{
+    background-image:url("../images/pattern-bg-desktop.png");
+   }
+   header form input{
+    font-size: 1em;
+    padding: 0.8em 1.4em;
+   }
+}
+@media(min-width:765px){
+    .container{
+    top: 1.1em;
+    align-content: space-evenly;
+
+}
+.container div{
+    max-width: 220px;
+}
+
+}
+@media (min-width:1024px) {
+  .container div {
+    text-align: start; 
+    gap: 0.5em;
+    padding: 0.4em;
+    max-width: 250px;
+  }
+
+}
+
+@media (min-width:1200px){
+    .container div:not(:last-child) {
+    border-right: 1px solid rgba(196, 194, 194, 0.523);
+    }
+    header h1{
+    font-size: 1.3em;
+   }
+    h2{
+    font-size: 1.2em
+    }
+}
+@media (min-width:1400px) {
+     header h1{
+    font-size: 1.6em;
+   }
+  h2{
+    font-size: 1.3em
+  }
+}
+@media (min-width:1500px) {
+    header form{
+  max-width: 600px;
+    }
+    header h1{
+    font-size: 1.8em;
+    margin-bottom: 0.1em;
+   }
+      header form input{
+    font-size: 1.1em;
+   }
+  .container{
+    max-width: 1130px;
+}
+}
