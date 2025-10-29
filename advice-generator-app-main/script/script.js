@@ -16,5 +16,8 @@ async function displayText() {
 }
 
 bot.addEventListener('click',displayText)
-getAdviceById(117)
+document.addEventListener("DOMContentLoaded", () => {
+    getAdviceById(117)
+
+});
 
