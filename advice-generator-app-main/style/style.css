@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --Blue_200: hsl(193, 38%, 86%);
+    --Green_300:hsl(150, 100%, 66%);
+    --Blue_600: hsl(217, 19%, 38%);
+    --Blue_900: hsl(217, 19%, 24%);
+    --Blue_950: hsl(218, 23%, 16%);
+    --Font:'Manrope', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    flex-direction: column;
+    font-family: var(--Font);
+    background-color: var(--Blue_950);
+}
+body, main, main section,#botao{
+    display: flex;
+    align-items: center;
+}
+main{
+    flex:1;
+    justify-content: center;
+    width: 100%;
+}
+main section{
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Blue_900);
+    color: var(--Blue_200);
+    width: 90%;
+    max-width: 480px;
+    padding: 2.6em 1em;
+    border-radius: 10px;
+    gap:1.4em;
+    position: relative;
+    box-shadow: 2px 2px 22px 5px rgba(0, 0, 0, 0.108);
+    text-shadow: 1px 1px 2px var(--Blue_950);
+    border: 1px solid rgba(255, 255, 255, 0.059);
+}
+section > #primeiraImagem{
+    margin-bottom: 1.3em;
+    width: 100%;
+    height: 20px;
+    background-image: url("../images/pattern-divider-mobile.svg");
+    background-repeat: no-repeat;
+    background-position:  center;
+
+}
+#advice{
+    font-size: 11px;
+    color: var(--Green_300);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+}
+#text{
+    font-size:24px;
+    text-align: center;
+}
+#text::before {
+    content: "“";
+}
+#text::after {
+    content: "”";
+}
+#botao{
+    position: absolute;
+    bottom: -2em;
+    width: 62px;
+    height: 62px;
+    background-color: var(--Green_300);
+    border-radius: 50%;
+    justify-content: center; 
+    border: 1px solid rgba(255, 255, 255, 0.054);
+    box-shadow: -1px 1px 2px 2px rgba(0, 0, 0, 0.082);
+    cursor:pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+#botao:hover{
+    box-shadow: 1px 1px 50px 3px var(--Green_300);
+    transform: scale(1.1);
+}
+.card{
+    font-size: 28px;
+}
+footer{
+    color: var(--Blue_200);
+}
+footer a{
+    color: var(--Green_300);
+    text-decoration: none;
+}
+
+@media (min-width: 568px) {
+    #text{
+    font-size:28px;
+    }
+    main section{
+        max-width: 520px;
+        padding: 2.6em 1.9em;
+        gap:2em;
+    }
+    section > #primeiraImagem{
+    background-image: url("../images/pattern-divider-desktop.svg");
+    margin-bottom: 1.7em;
+    }
+    #advice{
+        font-size: 13px;
+    }
+}
